@@ -1,12 +1,8 @@
-# Job+: AWS based Web Service Development - Job Recommendation
+# LinkedIn+: An AWS based Job Recommendation Application
 
-Front End:
-* Developed an interactive web page for users to search and apply positions (HTML, CSS, JavaScript, AJAX)
-* Used favorite records to provide personalized position recommendation
-
-Back End:
-* Created three Java servlets with RESTful APIs to handle HTTP requests and responses
-* Used MySQL database on Amazon RDS to store position data fetched from Github API
-* Used MonkeyLearn API to extract keywords from descriptions of positions
-* Designed algorithms (e.g., content based recommendation) to implement job recommendation
-* Deployed to Amazon EC2 for more visibility
+* Developed an interactive web page for users to search and apply positions.
+* Implemented RESTful APIs using Java servlets to handle HTTP requests and responses.
+* Stored position data fetched from Github API using MySQL database on Amazon RDS.
+* Extracted keywords from descriptions of positions using MonkeyLearn API.
+* Researched multiple recommendation algorithms and extracted keywords from job descriptions to implement a Content-based algorithm.
+* Deployed the service to AWS EC2 for better scaling.
