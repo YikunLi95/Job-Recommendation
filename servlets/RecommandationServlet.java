@@ -1,4 +1,7 @@
-package com.laioffer.job;
+package com.laioffer.job.servlet;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.laioffer.job.entity.ResultResponse;
 
 import javax.servlet.*;
 import javax.servlet.http.*;
@@ -9,7 +12,13 @@ import java.io.IOException;
 public class RecommandationServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        response.getWriter().write("This is RecommendationServlet");
+        ObjectMapper mapper = new ObjectMapper();
+        HttpSession session = request.getSession(false);
+        if (session == null) {
+            response.setStatus(403);
+            mapper.writeValue(response.getWriter(), new ResultResponse("Session Invalid"));
+            return;
+        }
     }
 
     @Override
