@@ -1,4 +1,4 @@
-# LinkedIn+: An AWS based Job Recommendation Application
+# JobSearch: A content based recommendation engine for jobs
 
 * Developed an interactive web page for users to search and apply positions.
 * Implemented RESTful APIs using Java servlets to handle HTTP requests and responses.
